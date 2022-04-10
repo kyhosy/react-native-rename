@@ -10,10 +10,8 @@
     "relink": "npm unlink && npm run prepublish && npm link",
     "format": "prettier --write '**/*.{js,jsx}'",
     "lint": "eslint '**/*.{js,jsx}'",
-    "react-native-rename": "babel-node src/index.js",
-    "precommit": "lint-staged",
-    "build:component": "rollup -c build/rollup.config.js",
-    "prepare": "yarn build:component || npm run build:component"
+    "react-native-rename-android": "babel-node src/index.js",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "**/*.js": [
